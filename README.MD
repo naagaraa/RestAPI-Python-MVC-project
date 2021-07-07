@@ -62,7 +62,7 @@ folder apps terdiri dari beberapa bagian yaitu :
 **exmpale** :
 
 
-```
+```python
 
 from os.path import dirname, basename, isfile, join
 import glob
@@ -82,7 +82,7 @@ __all__ = [ basename(f)[:-3] for f in modules if isfile(f) and not f.endswith('_
 **exmpale** :
 
 
-```
+```python
 
 app = Flask(__name__)
 
@@ -100,7 +100,7 @@ import semua file dari object app pada folder routes __init__.py
 **exmpale** :
 
 
-```
+```python
 
 from app import app
 from app.models.user import User  
@@ -122,7 +122,7 @@ class UserController:
 **exmpale** :
 
 
-```
+```python
 class User:
     def __init__(self):
         self.nama = "Nagara"
@@ -144,7 +144,7 @@ class User:
 **exmpale** :
 
 
-```
+```python
 from app import app
 from app.controllers.user_controller import UserController
 
