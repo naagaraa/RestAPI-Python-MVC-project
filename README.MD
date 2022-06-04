@@ -26,8 +26,9 @@ description or requretment
 - pip3
 
 1. git clone 
-2. ..\\> pip install requiretment.txt or anything hahaha
-3. ..\\> venv\scripts\activate
+2. ..\\> venv\scripts\activate
+3. ..\\> pip install -r requiretment.txt
+4. ..\\> $env:FLASK_APP = "server"
 4. ..\\> run server python -m flask run
 5. open di browser
 

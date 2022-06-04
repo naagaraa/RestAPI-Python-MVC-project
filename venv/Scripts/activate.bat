@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\CodingDev\Python\restapi\venv
+set VIRTUAL_ENV=D:\4.WebDevelopment\2022\restapi-flask-starter\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

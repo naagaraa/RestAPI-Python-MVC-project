@@ -1,3 +1,6 @@
+import os
+from dotenv import dotenv_values
+
 """ 
 ------------------------------------------------------------------
 Documentation MVC Python Rest
@@ -22,5 +25,5 @@ Boostraping run di server port 8080
 ------------------------------------------------------------------
 import file __init__py
 """
-
+config = dotenv_values(".env")
 app.run(port=8080)
