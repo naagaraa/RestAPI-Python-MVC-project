@@ -28,8 +28,8 @@ description or requretment
 - python3
 - pip3
 
-1. git clone
-2. cd <project-name>
+1. git clone git@github.com:naagaraa/RestAPI-Python-MVC-project.git
+2. cd < project-name >
 3. ..\\> py -3 -m venv venv
 4. ..\\> venv\scripts\activate
 5. ..\\> pip install -r requiretment.txt
