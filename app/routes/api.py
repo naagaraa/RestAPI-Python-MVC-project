@@ -10,6 +10,8 @@ webservice dengan pattern MVC model, view, controller
 
 from app import app
 from app.controllers.user_controller import UserController
+from werkzeug.exceptions import HTTPException
+
 """ 
 ------------------------------------------------------------------
 import module 
@@ -52,8 +54,16 @@ buat object baru dari class, lalu baru panggil methodnya
 
 
 @app.route('/')
-def index():
+async def index():
 
     user = UserController()
     test = user.getData()
     return test
+
+# errpr handler
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    # pass through HTTP errors
+    if isinstance(e, HTTPException):
+        return e

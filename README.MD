@@ -30,12 +30,20 @@ description or requretment
 
 1. git clone git@github.com:naagaraa/RestAPI-Python-MVC-project.git
 2. cd < project-name >
-3. ..\\> py -3 -m venv venv
-4. ..\\> venv\scripts\activate
-5. ..\\> pip install -r requiretment.txt
-6. ..\\> cp .env.example .env
+3. ..\\> cp .env.example .env
+4. ..\\> py -3 -m venv venv
+5. ..\\> venv\scripts\activate
+6. ..\\> pip install -r requiretment.txt
 7. ..\\> flask run
 8. open di browser http://localhost/
+
+## update depedency in pip
+
+```
+venv\scripts\activate
+pip install <package>
+pip freeze > requiretment.txt
+```
 
 ## Basic Penjelasan
 
