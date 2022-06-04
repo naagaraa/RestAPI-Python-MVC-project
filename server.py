@@ -1,6 +1,5 @@
-import os
-from dotenv import dotenv_values
-
+from app import app  # import app dari package app yang kita buat
+from dotenv import load_dotenv
 """ 
 ------------------------------------------------------------------
 Documentation MVC Python Rest
@@ -17,7 +16,6 @@ Import app dari folder app
 ------------------------------------------------------------------
 import file __init__py
 """
-from app import app ## import app dari package app yang kita buat
 
 """ 
 ------------------------------------------------------------------
@@ -25,5 +23,5 @@ Boostraping run di server port 8080
 ------------------------------------------------------------------
 import file __init__py
 """
-config = dotenv_values(".env")
+load_dotenv()
 app.run(port=8080)

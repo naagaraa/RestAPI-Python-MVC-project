@@ -50,6 +50,7 @@ buat object baru dari class, lalu baru panggil methodnya
 
 # routing here
 
+
 @app.route('/')
 def index():
 

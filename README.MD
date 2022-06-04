@@ -1,4 +1,5 @@
 <!-- title -->
+
 # RestAPI PYTHON FLASK PROJECT-Self
 
 <!-- Description -->
@@ -11,57 +12,61 @@
 ---
 
 <!-- table of content YT -->
-#### Fork repo
-<p>jika mau clone repo ini ke github kalian, kalian tinggal klik forked di pojok kanan atas. thx</p>
 
+#### Fork repo
+
+<p>jika mau clone repo ini ke github kalian, kalian tinggal klik forked di pojok kanan atas. thx</p>
 
 ## Author dan Contribution
 
-* **Naagaraa Mahasiswa Darma Persada dan Content Creator**  [ instagram ](https://www.instagram.com/naagaraa/)
-
+- **Naagaraa Mahasiswa Darma Persada dan Content Creator** [ instagram ](https://www.instagram.com/naagaraa/)
 
 ## Installation manual
+
 description or requretment
+
 - python3
 - pip3
 
-1. git clone 
-2. ..\\> venv\scripts\activate
-3. ..\\> pip install -r requiretment.txt
-4. ..\\> $env:FLASK_APP = "server"
-4. ..\\> run server python -m flask run
-5. open di browser
+1. git clone
+2. cd <project-name>
+3. ..\\> py -3 -m venv venv
+4. ..\\> venv\scripts\activate
+5. ..\\> pip install -r requiretment.txt
+6. ..\\> cp .env.example .env
+7. ..\\> flask run
+8. open di browser http://localhost/
 
+## Basic Penjelasan
 
-## Basic Penjelasan 
 basic guide ini adalah penjelasan dasar tentang structur yang akan saya bahas. project ini terdiri dari 2 folder, yaitu apps, venv. apps berisi semua fungsi dan konsept MVC ada di dalamannya. folder venv sebagai envirotmentnya.
 
-* app
-	* controller
-	* models
-	* routes
-* venv
-	* boostraps
-* server.py
+- app
+  - controller
+  - models
+  - routes
+- venv
+  - boostraps
+- server.py
 
 ## Folder App
 
 folder apps terdiri dari beberapa bagian yaitu :
-* controller
-* models
-* routes
 
-## Database Config 
-* on development
+- controller
+- models
+- routes
+
+## Database Config
+
+- on development
 
 <br><br>
 
 ## Autoloading
 
-
 <p>contoh untuk autoloading </p>
 **exmpale** :
-
 
 ```python
 
@@ -78,10 +83,8 @@ __all__ = [ basename(f)[:-3] for f in modules if isfile(f) and not f.endswith('_
 
 ## Boostraping
 
-
 <p>contoh untuk bootstraping </p>
 **exmpale** :
-
 
 ```python
 
@@ -96,15 +99,13 @@ import semua file dari object app pada folder routes __init__.py
 
 ## Controller
 
-
 <p>contoh untuk membuat controller.py </p>
 **exmpale** :
-
 
 ```python
 
 from app import app
-from app.models.user import User  
+from app.models.user import User
 
 class UserController:
     def getData(self):  # method untuk mengambil data
@@ -122,7 +123,6 @@ class UserController:
 <p>contoh untuk membuat models.py </p>
 **exmpale** :
 
-
 ```python
 class User:
     def __init__(self):
@@ -138,12 +138,10 @@ class User:
 
 <br><br>
 
-
 ## Routes
 
 <p>contoh untuk deklarasi sebuah path routing </p>
 **exmpale** :
-
 
 ```python
 from app import app
@@ -161,6 +159,7 @@ def index():
 <br><br>
 
 ## support Me
+
 <br>
 <!-- description -->
 hi, kamu bisa support gue dengan cara follow account sosial media di bawah atau traktir bakso pada link di bio social media mereka dibawah ini. thx,
@@ -169,15 +168,17 @@ hi, kamu bisa support gue dengan cara follow account sosial media di bawah atau 
 <br>
 
 <!-- Links -->
+
 **Please support me :**
 
-*Youtube Channel* : 
+_Youtube Channel_ :
 
-* Naagaraa : [ YT Naagaraa ](https://www.youtube.com/channel/UCYsZhw6Mlk23Q-nUPP9t1YA?view_as=subscriber)
+- Naagaraa : [ YT Naagaraa ](https://www.youtube.com/channel/UCYsZhw6Mlk23Q-nUPP9t1YA?view_as=subscriber)
 
- *instagram* : 
+  _instagram_ :
 
-* Naagaraa : [ IG Naagaraa ](https://www.instagram.com/naagaraa/)
+- Naagaraa : [ IG Naagaraa ](https://www.instagram.com/naagaraa/)
 
- *Donasi ?* : 
-* Naagaraa : [ Traktir baso aja ](https://saweria.co/naagaraa) gak banyak gpp
+  _Donasi ?_ :
+
+- Naagaraa : [ Traktir baso aja ](https://saweria.co/naagaraa) gak banyak gpp
