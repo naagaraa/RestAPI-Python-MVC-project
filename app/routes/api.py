@@ -57,10 +57,19 @@ buat object baru dari class, lalu baru panggil methodnya
 async def index():
 
     user = UserController()
-    test = user.getData()
-    return test
+    data = user.getData()
+    return data
+
+
+@app.route('/test')
+async def tests():
+
+    user = UserController()
+    data = user.testData()
+    print(data)
 
 # errpr handler
+
 
 @app.errorhandler(Exception)
 def handle_exception(e):

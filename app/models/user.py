@@ -8,7 +8,7 @@ webservice dengan pattern MVC model, view, controller
 
 """
 
-# next step 
+# next step
 
 """ 
 ------------------------------------------------------------------
@@ -37,3 +37,6 @@ class User:
             "hobbi": "coding",
             "lainnya": "belajar"
         }
+
+    def getrowData(self):
+        return se

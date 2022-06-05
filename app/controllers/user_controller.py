@@ -20,7 +20,7 @@ import User ini class dari file User.py
 
 """
 
-# next step 
+# next step
 
 """ 
 ------------------------------------------------------------------
@@ -44,3 +44,7 @@ class UserController:
         user = User()
         nama = user.getName()
         return nama
+
+    def testData(self):
+        user = User()
+        return user.getrowData()

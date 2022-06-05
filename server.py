@@ -1,5 +1,6 @@
 from app import app  # import app dari package app yang kita buat
 from dotenv import load_dotenv
+from flask_sqlalchemy import SQLAlchemy
 """ 
 ------------------------------------------------------------------
 Documentation MVC Python Rest
@@ -24,4 +25,7 @@ Boostraping run di server port 8080
 import file __init__py
 """
 load_dotenv()
-app.run(port=8080)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://nagara:12341234@localhost:3306/orion-scanner'
+
+if __name__ == "__main__":
+    app.run(port=8080)
